@@ -1,0 +1,21 @@
+section{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+}
+.next{
+    position: fixed;
+    right: 15px ;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 100%;
+}
