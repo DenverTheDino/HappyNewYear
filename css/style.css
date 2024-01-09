@@ -1,11 +1,22 @@
 section{
-    background-color: grey;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #000;
     width: 100vw;
     height: 100vh;
+}
+section::before{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
 }
 .next{
     position: fixed;
@@ -18,23 +29,73 @@ section{
     align-items: center;
     background-color: red;
     border-radius: 100%;
+    z-index: 99;
 }
 .next img{
     width: 50%;
     height: 50%;
 }
 .step-1{
-    background-color: chocolate;
+    position: relative;
 }
-.step-2{
-    background-color: cyan;
+.step-1 h2{
+    text-align: center;
 }
-.step-3{
-    background-color: crimson;
+.step-1 p{
+    margin-top: 30px;
+    text-align: center;
 }
-.step-4{
-    background-color: gold;
+.step-1::before{    
+    background-image: url(../images/articice.png);
 }
-.step-5{
-    background-color: lime;
+.step-2 h2{
+    text-align: center;
+}
+.step-2 p{
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+}
+.step-2::before{
+    background-image: url(../images/canada.png);    
+}
+.step-3::before{
+    background-image: url(../images/sapin.jpg);
+}
+.step-3 h2{
+    text-align: center;
+}
+.step-3 p{
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+}
+.step-4::before{
+    background-image: url(../images/sapin.jpg);
+   }
+   .step-4 h2{
+    text-align: center;
+}
+.step-4 p{
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+}
+.step-5::before{
+    background-image:url(../images/abruzzes.jpg) ;
+}
+.step-5 h2{
+    text-align: center;
+}
+.step-5 p{
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+}
+.step__inner{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
 }
