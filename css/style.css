@@ -19,3 +19,22 @@ section{
     background-color: red;
     border-radius: 100%;
 }
+.next img{
+    width: 50%;
+    height: 50%;
+}
+.step-1{
+    background-color: chocolate;
+}
+.step-2{
+    background-color: cyan;
+}
+.step-3{
+    background-color: crimson;
+}
+.step-4{
+    background-color: gold;
+}
+.step-5{
+    background-color: lime;
+}
