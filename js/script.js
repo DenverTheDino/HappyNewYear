@@ -34,10 +34,10 @@ function stepone(){
     step1.style.opacity = 0;
     
 
-  },"10000");
+  },"7000");
   setTimeout(()=>{
     steptwo()
-  },"10000");
+  },"7000");
 }
 function steptwo(){
   // variable card2
@@ -65,10 +65,10 @@ function steptwo(){
     step2para.style.opacity = 0;
     step2image.style.opacity = 0;
     step2.style.opacity = 0;
-  },"10000");
+  },"7000");
   setTimeout(()=>{
     stepthree()
-  },"10000");
+  },"7000");
 }
 function stepthree(){
   // variable card2
@@ -95,13 +95,13 @@ function stepthree(){
     step3para.style.opacity = 0;
     step3image.style.opacity = 0;
     step3.style.opacity = 0;
-  },"10000");
+  },"7000");
 
   setTimeout(()=>{
     stepfour()
     
 
-  },"10000");
+  },"7000");
 }
 function stepfour(){
   // variable card2
@@ -134,12 +134,12 @@ function stepfour(){
     step4.style.opacity = 0;
     
 
-  },"10000");
+  },"7000");
   setTimeout(()=>{
    stepcinq()
     
 
-  },"10000");
+  },"7000");
 
 
   
@@ -172,7 +172,7 @@ function stepcinq(){
     step5.style.opacity = 0;
     
 
-  },"10000");
+  },"7000");
 
 
   
