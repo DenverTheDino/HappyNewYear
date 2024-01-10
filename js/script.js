@@ -22,13 +22,10 @@ function stepone(){
     step1image.style.right=0
   setTimeout(()=>{
     step1title.style.opacity = 0;
-    step1title.transition = "8s"
     step1para.style.opacity = 0;
-    step1para.style.transition = "8s"
     step1image.style.opacity = 0;
-    step1image.style.transition.left = "8s"
     step1.style.opacity = 0;
-    step1.style.transition =   "8s"
+    
 
   },"10000");
 }
@@ -123,7 +120,7 @@ function stepfour(){
 
   
 }
-function stepfive(){
+function stepcinq(){
   // variable card2
   var step5 = document.getElementById("step-5");
   // var titre card 2 
@@ -146,11 +143,8 @@ function stepfive(){
 
    setTimeout(()=>{
     step5title.style.opacity = 0;
-    
     step5para.style.opacity = 0;
-    
     step5image.style.opacity = 0;
-    
     step5.style.opacity = 0;
     
 
@@ -160,25 +154,35 @@ function stepfive(){
   
 }
 
-function start(){   
+function start(){ 
+  console.log("debut stepone")  
 stepone();
   // step 2
+  console.log("finstepone")
   setTimeout(()=>{
+    console.log("debut step2")
     steptwo();
+    console.log("finstep2")
     //  step 3
       setTimeout(()=>{
+        console.log("debut step3")
         stepthree();
+        console.log("finstep3")
       // step 4
           setTimeout(()=>{
+            console.log("debut step4")
             stepfour();
+            console.log("finstep4")
             // step 5
               setTimeout(()=>{
-                  stepfive();
+                console.log("debut step5")
+                  stepcinq();
+                  console.log("finstep5")
               },"7000");
           },"7000");  
       },"7000");          
   },"10000");
-        
+       
 
  
   
