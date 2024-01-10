@@ -1,4 +1,11 @@
+function play(){
+const audio = document.getElementById("audio")
+audio.volume = 0.1;
+audio.currentTime < 20;
+audio.play()
+}
 function stepone(){
+  play()
   // variable card1
   var step1 = document.getElementById("step-1");
   // var titre card 1 
@@ -28,6 +35,9 @@ function stepone(){
     
 
   },"10000");
+  setTimeout(()=>{
+    steptwo()
+  },"10000");
 }
 function steptwo(){
   // variable card2
@@ -56,6 +66,9 @@ function steptwo(){
     step2image.style.opacity = 0;
     step2.style.opacity = 0;
   },"10000");
+  setTimeout(()=>{
+    stepthree()
+  },"10000");
 }
 function stepthree(){
   // variable card2
@@ -82,6 +95,12 @@ function stepthree(){
     step3para.style.opacity = 0;
     step3image.style.opacity = 0;
     step3.style.opacity = 0;
+  },"10000");
+
+  setTimeout(()=>{
+    stepfour()
+    
+
   },"10000");
 }
 function stepfour(){
@@ -113,6 +132,11 @@ function stepfour(){
     step4image.style.opacity = 0;
     
     step4.style.opacity = 0;
+    
+
+  },"10000");
+  setTimeout(()=>{
+   stepcinq()
     
 
   },"10000");
@@ -154,37 +178,4 @@ function stepcinq(){
   
 }
 
-function start(){ 
-  console.log("debut stepone")  
-stepone();
-  // step 2
-  console.log("finstepone")
-  setTimeout(()=>{
-    console.log("debut step2")
-    steptwo();
-    console.log("finstep2")
-    //  step 3
-      setTimeout(()=>{
-        console.log("debut step3")
-        stepthree();
-        console.log("finstep3")
-      // step 4
-          setTimeout(()=>{
-            console.log("debut step4")
-            stepfour();
-            console.log("finstep4")
-            // step 5
-              setTimeout(()=>{
-                console.log("debut step5")
-                  stepcinq();
-                  console.log("finstep5")
-              },"7000");
-          },"7000");  
-      },"7000");          
-  },"10000");
-       
 
- 
-  
-  
-}
