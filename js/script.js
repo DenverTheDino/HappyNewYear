@@ -20,37 +20,167 @@ function stepone(){
     // img card 1 afficher gauche
     step1image.style.opacity = 1
     step1image.style.right=0
-   
-
-  setTimeout(()=>{
-
-    
-
-  },"5000");
-  setTimeout(()=>{
-   
-   
-
-  },"5500");
-  setTimeout(()=>{
-   
-   
-
-  },"6000");
   setTimeout(()=>{
     step1title.style.opacity = 0;
     step1title.transition = "8s"
     step1para.style.opacity = 0;
     step1para.style.transition = "8s"
     step1image.style.opacity = 0;
-    step1image.style.transition = "8s"
+    step1image.style.transition.left = "8s"
     step1.style.opacity = 0;
-    step1.style.transition = "8s"
+    step1.style.transition =   "8s"
 
   },"10000");
 }
+function steptwo(){
+  // variable card2
+  var step2 = document.getElementById("step-2");
+  // var titre card 2 
+  var step2title = document.getElementById("step-2Title");
+  // var paragraphe card 2
+  var step2para = document.getElementById("step-2Para");
+  // var image card 2
+  var step2image = document.getElementById("step-2Image");
+      
 
-function start(){
-  stepone();
+   // card 2 afficher afficher
+   step2.style.opacity = 1;
+   // title card 2 afficher 
+   step2title.style.opacity = 1;
+   // para card 2 afficher 
+   step2para.style.opacity = 1;      
+   // img card 2 afficher 
+   step2image.style.opacity = 1
+   
 
+   setTimeout(()=>{
+    step2title.style.opacity = 0;
+    step2para.style.opacity = 0;
+    step2image.style.opacity = 0;
+    step2.style.opacity = 0;
+  },"10000");
+}
+function stepthree(){
+  // variable card2
+  var step3 = document.getElementById("step-3");
+  // var titre card 2 
+  var step3title = document.getElementById("step-3Title");
+  // var paragraphe card 2
+  var step3para = document.getElementById("step-3Para");
+  // var image card 2
+  var step3image = document.getElementById("step-3Image");
+      
+
+   // card 2 afficher afficher
+   step3.style.opacity = 1;
+   // title card 2 afficher 
+   step3title.style.opacity = 1;
+   // para card 2 afficher 
+   step3para.style.opacity = 1;      
+   // img card 2 afficher 
+   step3image.style.opacity = 1
+    
+   setTimeout(()=>{
+    step3title.style.opacity = 0;
+    step3para.style.opacity = 0;
+    step3image.style.opacity = 0;
+    step3.style.opacity = 0;
+  },"10000");
+}
+function stepfour(){
+  // variable card2
+  var step4 = document.getElementById("step-4");
+  // var titre card 2 
+  var step4title = document.getElementById("step-4Title");
+  // var paragraphe card 2
+  var step4para = document.getElementById("step-4Para");
+  // var image card 2
+  var step4image = document.getElementById("step-4Image");
+      
+
+   // card 2 afficher afficher
+   step4.style.opacity = 1;
+   // title card 2 afficher 
+   step4title.style.opacity = 1;
+   // para card 2 afficher 
+   step4para.style.opacity = 1;      
+   // img card 2 afficher 
+   step4image.style.opacity = 1
+   
+
+   setTimeout(()=>{
+    step4title.style.opacity = 0;
+    
+    step4para.style.opacity = 0;
+    
+    step4image.style.opacity = 0;
+    
+    step4.style.opacity = 0;
+    
+
+  },"10000");
+
+
+  
+}
+function stepfive(){
+  // variable card2
+  var step5 = document.getElementById("step-5");
+  // var titre card 2 
+  var step5title = document.getElementById("step-5Title");
+  // var paragraphe card 2
+  var step5para = document.getElementById("step-5Para");
+  // var image card 2
+  var step5image = document.getElementById("step-5Image");
+      
+
+   // card 2 afficher afficher
+   step5.style.opacity = 1;
+   // title card 2 afficher 
+   step5title.style.opacity = 1;
+   // para card 2 afficher 
+   step5para.style.opacity = 1;      
+   // img card 2 afficher 
+   step5image.style.opacity = 1;
+   
+
+   setTimeout(()=>{
+    step5title.style.opacity = 0;
+    
+    step5para.style.opacity = 0;
+    
+    step5image.style.opacity = 0;
+    
+    step5.style.opacity = 0;
+    
+
+  },"10000");
+
+
+  
+}
+
+function start(){   
+stepone();
+  // step 2
+  setTimeout(()=>{
+    steptwo();
+    //  step 3
+      setTimeout(()=>{
+        stepthree();
+      // step 4
+          setTimeout(()=>{
+            stepfour();
+            // step 5
+              setTimeout(()=>{
+                  stepfive();
+              },"7000");
+          },"7000");  
+      },"7000");          
+  },"10000");
+        
+
+ 
+  
+  
 }
